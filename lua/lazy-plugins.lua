@@ -62,16 +62,16 @@ require('lazy').setup({
         mappings = vim.g.have_nerd_font,
         -- If you are using a Nerd Font: set icons.keys to an empty table which will use the
         -- default which-key.nvim defined Nerd Font icons, otherwise define a string table
-        keys = vim.g.have_nerd_font and {} or {
+        keys = vim.g.have_nerd_font and {} or { -- :help *key-notation*
           Up = '<Up> ',
           Down = '<Down> ',
           Left = '<Left> ',
           Right = '<Right> ',
-          C = '<C-…> ', -- Ctrl
+          C = '<C-…> ',
           M = '<M-…> ',
           D = '<D-…> ',
-          S = '<S-…> ', -- Shift
-          CR = '<CR> ', -- Enter
+          S = '<S-…> ',
+          CR = '<CR> ',
           Esc = '<Esc> ',
           ScrollWheelDown = '<ScrollWheelDown> ',
           ScrollWheelUp = '<ScrollWheelUp> ',
