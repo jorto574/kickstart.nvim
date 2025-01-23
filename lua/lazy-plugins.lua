@@ -637,20 +637,6 @@ require('lazy').setup({
     end,
   },
 
-  { -- This theme is one I found on the internet and resembles best the one I had in VSCode.
-    'gmr458/vscode_modern_theme.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('vscode_modern').setup {
-        cursorline = true,
-        transparent_background = false,
-        nvim_tree_darker = true,
-      }
-      vim.cmd.colorscheme 'vscode_modern'
-    end,
-  },
-
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
@@ -738,6 +724,7 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   -- { import = 'custom.plugins' },
+  require 'custom.themes',
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
