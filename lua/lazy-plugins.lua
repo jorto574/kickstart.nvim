@@ -67,11 +67,11 @@ require('lazy').setup({
           Down = '<Down> ',
           Left = '<Left> ',
           Right = '<Right> ',
-          C = '<C-…> ',
+          C = '<C-…> ', -- Ctrl
           M = '<M-…> ',
           D = '<D-…> ',
-          S = '<S-…> ',
-          CR = '<CR> ',
+          S = '<S-…> ', -- Shift
+          CR = '<CR> ', -- Enter
           Esc = '<Esc> ',
           ScrollWheelDown = '<ScrollWheelDown> ',
           ScrollWheelUp = '<ScrollWheelUp> ',
