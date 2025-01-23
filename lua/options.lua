@@ -64,4 +64,7 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 3 -- changed this from 10!
 
+-- Select foldmethod
+vim.opt.foldmethod = 'manual'
+
 -- vim: ts=2 sts=2 sw=2 et
