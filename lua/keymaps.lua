@@ -48,4 +48,32 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- Write buffer keymap
 vim.keymap.set('n', '<leader>w', ':w<CR>', { desc = '[W]rite current buffer' })
 
+-- Resize window
+vim.keymap.set('n', '<C-Up>', '<C-w>+')
+vim.keymap.set('n', '<C-Down>', '<C-w>-')
+vim.keymap.set('n', '<C-Left>', '<C-w><')
+vim.keymap.set('n', '<C-Right>', '<C-w>>')
+
+-- Moving code in visual mode
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+vim.keymap.set('v', '<', '<gv')
+vim.keymap.set('v', '>', '>gv')
+
+-- Switching Tabs
+vim.keymap.set('n', '<TAB>', 'gt')
+vim.keymap.set('n', '<S-TAB>', 'gT')
+
+-- Visuals for moving around in window
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-f>', '<C-f>zz')
+vim.keymap.set('n', '<C-b>', '<C-b>zz')
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+-- vim.keymap.set('n', 'J', 'mzJ`z')
+-- The keymap above joins the current line with the next one and
+-- does not move the cursor from its original position. The default
+-- behavior is to join the two lines and move the cursor to the merging point.
+
 -- vim: ts=2 sts=2 sw=2 et
