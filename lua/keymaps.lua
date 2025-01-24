@@ -72,9 +72,11 @@ vim.keymap.set('n', '<C-f>', '<C-f>zz')
 vim.keymap.set('n', '<C-b>', '<C-b>zz')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
--- vim.keymap.set('n', 'J', 'mzJ`z')
--- The keymap above joins the current line with the next one and
+
+-- The following keymap joins the current line with the next one and
 -- does not move the cursor from its original position. The default
 -- behavior is to join the two lines and move the cursor to the merging point.
+-- The temporary mark that is being created is deleted in the end.
+vim.keymap.set('n', 'J', 'mzJ`z<cmd>delm z<CR>')
 
 -- vim: ts=2 sts=2 sw=2 et
