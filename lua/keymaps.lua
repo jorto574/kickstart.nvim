@@ -59,8 +59,8 @@ keymap('n', '<C-Left>', '<C-w><')
 keymap('n', '<C-Right>', '<C-w>>')
 
 -- Moving code in visual mode
-keymap('v', 'J', ":m '>+1<CR>gv=gv")
-keymap('v', 'K', ":m '<-2<CR>gv=gv")
+keymap('v', 'J', "<cmd>m '>+1<CR>gv=gv")
+keymap('v', 'K', "<cmd>m '<-2<CR>gv=gv")
 keymap('v', '<', '<gv')
 keymap('v', '>', '>gv')
 
