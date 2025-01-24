@@ -75,6 +75,9 @@ keymap('n', '<C-b>', '<C-b>zz')
 keymap('n', 'n', 'nzzzv')
 keymap('n', 'N', 'Nzzzv')
 
+-- Splitting windows
+keymap('n', '<C-s>', '<cmd>split<CR>', { noremap = true })
+
 -- The following keymap joins the current line with the next one and
 -- does not move the cursor from its original position. The default
 -- behavior is to join the two lines and move the cursor to the merging point.
