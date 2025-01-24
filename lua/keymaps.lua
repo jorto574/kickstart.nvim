@@ -75,6 +75,15 @@ keymap('n', '<C-b>', '<C-b>zz')
 keymap('n', 'n', 'nzzzv')
 keymap('n', 'N', 'Nzzzv')
 
+-- Moving windows around (these don't work)
+-- keymap('n', '<C-H>', '<C-w>H', { desc = 'Move the current window to be at the far left (full height)' })
+-- keymap('n', '<C-L>', '<C-w>L', { desc = 'Move the current window to be at the far right (full height)' })
+-- keymap('n', '<C-J>', '<C-w>J', { desc = 'Move the current window to be at the very bottom (full width)' })
+-- keymap('n', '<C-K>', '<C-w>K', { desc = 'Move the current window to be at the very top (full width)' })
+-- The following keymap is not useful for the time being, because
+-- <C-T> is mapped to a new tab in Terminal. Keeping it for future use.
+-- keymap('n', '<C-T>', '<C-w>T', { desc = 'Move the current window to a new tab page' })
+
 -- Splitting windows
 keymap('n', '<C-s>', '<cmd>split<CR>', { noremap = true })
 
