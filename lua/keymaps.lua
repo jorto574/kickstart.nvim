@@ -48,8 +48,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- Write/Quit buffer
-keymap('n', '<leader>w', ':w<CR>', { desc = '[W]rite current buffer' })
-keymap('n', '<leader>q', ':q<CR>', { desc = '[Q]uit current buffer' })
+keymap('n', '<leader>w', '<cmd>w<CR>', { desc = '[W]rite current buffer' })
+keymap('n', '<leader>q', '<cmd>q<CR>', { desc = '[Q]uit current buffer' })
+keymap('n', '<leader>Q', '<cmd>qa<CR>', { desc = '[Q]uit [A]ll buffers' })
 
 -- Resize window
 keymap('n', '<C-Up>', '<C-w>+')
