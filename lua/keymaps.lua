@@ -98,4 +98,7 @@ keymap('n', 'J', 'mzJ`z<cmd>delm z<CR>')
 -- Explore keymap
 keymap('n', '<leader>e', vim.cmd.Explore, { desc = '[E]xplore' })
 
+-- Pasting over stuff
+keymap('x', '<leader>p', '"_dP')
+
 -- vim: ts=2 sts=2 sw=2 et
