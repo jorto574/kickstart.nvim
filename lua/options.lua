@@ -32,6 +32,9 @@ vim.opt.shiftwidth = 2 -- Number of spaces to use for autoindent
 vim.opt.expandtab = true -- Convert tabs to spaces
 vim.opt.autoindent = true
 
+-- Enable no-wrapping
+vim.opt.wrap = false
+
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
