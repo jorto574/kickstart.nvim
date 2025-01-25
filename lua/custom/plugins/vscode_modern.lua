@@ -1,6 +1,7 @@
--- vscode_modern_theme
+-- vscode_modern
+-- https://github.com/gmr458/vscode_modern_theme.nvim
 
-return { -- This theme is one I found on the internet and resembles best the one I had in VSCode.
+return {
   'gmr458/vscode_modern_theme.nvim',
   lazy = false,
   priority = 1000,
