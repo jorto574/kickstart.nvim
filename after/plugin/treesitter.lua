@@ -1,6 +1,19 @@
 require('nvim-treesitter.configs').setup {
   -- A list of parser names, or 'all'
-  ensure_installed = { 'lua', 'c', 'cpp', 'diff', 'javascript', 'typescript', 'bash', 'ocaml', 'haskell' },
+  ensure_installed = {
+    'lua',
+    'c',
+    'cpp',
+    'diff',
+    'javascript',
+    'typescript',
+    'bash',
+    'ocaml',
+    'haskell',
+    'gitcommit',
+    'python',
+    'rust',
+  },
 
   -- List of parsers to ignore installing (for 'all')
   -- ignore_install = {},
