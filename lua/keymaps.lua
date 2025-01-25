@@ -95,4 +95,7 @@ keymap('n', '<C-s>v', '<cmd>vsplit<CR>', { noremap = true })
 -- The temporary mark that is being created is deleted in the end.
 keymap('n', 'J', 'mzJ`z<cmd>delm z<CR>')
 
+-- Explore keymap
+keymap('n', '<leader>e', vim.cmd.Explore, { desc = '[E]xplore' })
+
 -- vim: ts=2 sts=2 sw=2 et
