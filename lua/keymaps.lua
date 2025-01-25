@@ -86,7 +86,8 @@ keymap('n', 'N', 'Nzzzv')
 -- keymap('n', '<C-T>', '<C-w>T', { desc = 'Move the current window to a new tab page' })
 
 -- Splitting windows
-keymap('n', '<C-s>', '<cmd>split<CR>', { noremap = true })
+keymap('n', '<C-s>o', '<cmd>split<CR>', { noremap = true })
+keymap('n', '<C-s>v', '<cmd>vsplit<CR>', { noremap = true })
 
 -- The following keymap joins the current line with the next one and
 -- does not move the cursor from its original position. The default
